@@ -17,7 +17,7 @@ public class TelefoneExcluidor {
 		
 		while(iterator.hasNext()) {
 			Telefone telefone = iterator.next();
-			if(telefone.getId() == telefoneExclusao.getId()) {
+			if(telefoneExclusao.getId() == telefone.getId()) {
 				iterator.remove();
 			}
 		}

@@ -14,10 +14,10 @@ public class DocumentoExcluidor {
 	public Cliente excluir(Cliente cliente, Documento documentoExclusao) {
 		List<Documento> listaDocumentos = cliente.getDocumentos();
 		Iterator<Documento> iterator = listaDocumentos.iterator();
-		
-		while(iterator.hasNext()) {
+
+		while (iterator.hasNext()) {
 			Documento documento = iterator.next();
-			if(documento.getId() == documentoExclusao.getId()) {
+			if (documento.getId() == documentoExclusao.getId()) {
 				iterator.remove();
 			}
 		}
